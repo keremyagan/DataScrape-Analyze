@@ -1,0 +1,9 @@
+termcolor
+instascrape
+pandas
+snowballstemmer
+nltk
+selenium
+requests
+PIL
+pytesseract
