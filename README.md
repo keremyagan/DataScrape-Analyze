@@ -1,8 +1,3 @@
-# Note
--To download Tesseract : https://github.com/UB-Mannheim/tesseract/wiki 
--After download it , add Turkish language packet when setup processing
--To reach latest selenium version , visit https://chromedriver.chromium.org/downloads
-
 ### Features
 
 - Gets Instagram and Twitter Hashtags
@@ -128,6 +123,9 @@ text=ImagetoText(display_url).download()
 ```
 
 
-
+# Note
+-To download Tesseract : https://github.com/UB-Mannheim/tesseract/wiki 
+-After download it , add Turkish language packet when setup processing
+-To reach latest selenium version , visit https://chromedriver.chromium.org/downloads
 
 
