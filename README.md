@@ -12,20 +12,15 @@
 ![](https://camo.githubusercontent.com/38f5db5524ba43e7262dfbca1f7d3631ba127fb1596785dfd707d5fc671821c9/687474703a2f2f466f7254686542616467652e636f6d2f696d616765732f6261646765732f6d6164652d776974682d707974686f6e2e737667) 
 
 
-**Table of Contents**
 
-[TOCM]
-
-[TOC]
-
-#Instagram Scraper
+# Instagram Scraper
 It uses [InstaScrape](https://github.com/chris-greening/instascrape "InstaScrape") Library to scan hashtags. Need to create an instance to use InstagramScraper class. 
 ```python
 from instagramscraper import InstagramHashtag
 instagram=InstagramHashtag(hashtag_name,hashtag_amount)
 ```
  
-##Get Instagram Hashtags as a list in a tuple
+## Get Instagram Hashtags as a list in a tuple
 ```python
 data=instagram.hashtag_result()
 ```
@@ -39,12 +34,12 @@ This code returns a list in a tuple. List elements contains:
 -Is Video (Returns True/False)
 -Caption2 
 -Image Text (Returns If there is image , else returns "Video")
-##Get Instagram Hashtags as a dictionary in a tuple
+## Get Instagram Hashtags as a dictionary in a tuple
 ```python
 data=instagram.to_dict()
 ```
 It returns same result with hashtag_result . Difference is this function returns data as a dictionary in a tuple.
-##Get Instagram Hashtags Using Property Feautures
+## Get Instagram Hashtags Using Property Feautures
 ```python
 instagram=InstagramHashtag(hashtag_name,hashtag_amount)
 print(instagram.post_url)
@@ -58,7 +53,7 @@ print(instagram.is_video)
 print(instagram.post_time)
 print(instagram.short_code)
 ```
-##Save Data
+## Save Data
 ```python
 instagram=InstagramHashtag(hashtag_name,hashtag_amount)
 result=instagram.save_csv("InstagramData")
@@ -73,7 +68,7 @@ To use:
 from twitterhashtag import TwitterHastags
 twitter=TwitterHastags(hashtag_name,hashtag_amount)
 ```
-##Get Twitter Hashtags as a list in a tuple
+## Get Twitter Hashtags as a list in a tuple
 ```python
 data=twitter.hashtag_results()
 ```
@@ -84,12 +79,12 @@ This code returns a list in a tuple. List elements contains:
 -Text
 -Display URL
 -Image Text (Returns If there is image , else returns "No Image")
-##Get Twitter Hashtags as a dictionary in a tuple
+## Get Twitter Hashtags as a dictionary in a tuple
 ```python
 data=twitter.to_dict()
 ```
 It returns same result with hashtag_result . Difference is this function returns data as a dictionary in a tuple.
-##Get Twitter Hashtags Using Property Feautures
+## Get Twitter Hashtags Using Property Feautures
 ```python
 twitter=TwitterHastags(hashtag_name,hashtag_amount)
 data=twitter.to_dict()
@@ -101,7 +96,7 @@ for d in data:
     print(d["text"])
     print(d["text2"]) #image text
 ```
-##Save Data
+## Save Data
 ```python
 twitter=TwitterHastags(hashtag_name,hashtag_amount)
 result=twitter.save_csv("TwitterData")
@@ -110,13 +105,13 @@ print(result)
 If operation is success , function returns "File Saved To {file_name} As Csv File" , else returns "An Error Occurred:{error}".
 Also usable save_excel and save_txt too .
 
-#Word Analysis
+# Word Analysis
 ```python
 from wordanalysis import WordAnalysis
 wd=WordAnalysis(sentence)
 negative,positive,all_words,risk=wd.analysis()
 ```
-#From Image To Text
+# From Image To Text
 ```python
 from imagetotext import ImagetoText
 text=ImagetoText(display_url).text()
