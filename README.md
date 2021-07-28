@@ -86,14 +86,12 @@ It returns same result with hashtag_result . Difference is this function returns
 ## Get Twitter Hashtags Using Property Feautures
 ```python
 twitter=TwitterHastags(hashtag_name,hashtag_amount)
-data=twitter.to_dict()
-for d in data:
-    print(d["link"]) #post url
-    print(d["display_url"])
-    print(d["name"])
-    print(d["username"])
-    print(d["text"])
-    print(d["text2"]) #image text
+print(twitter.link) #post url
+print(twitter.display_url)
+print(twitter.name)
+print(twitter.username)
+print(twitter.text)
+print(twitter.iamge_text) #image text
 ```
 ## Save Data
 ```python
