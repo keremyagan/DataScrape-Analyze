@@ -60,7 +60,7 @@ print(result)
 ```
 If operation is success , function returns "File Saved To {file_name} As Csv File" , else returns "An Error Occurred:{error}".
 Also usable save_excel and save_txt too .
-#Twitter Scraper
+# Twitter Scraper
 It uses headless selenium with Chrome . 
 To use:
 ```python
