@@ -91,7 +91,7 @@ print(twitter.display_url)
 print(twitter.name)
 print(twitter.username)
 print(twitter.text)
-print(twitter.iamge_text) #image text
+print(twitter.image_text) #image text
 ```
 ## Save Data
 ```python
