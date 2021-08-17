@@ -4,7 +4,7 @@
 - Gets Text from An Image in Post
 - Analyzes Text Using Some NLTK Tools
 - Saves data in Csv/Excel/Txt formats
-- Don't Need to Login Instagram/Twitter Account to Scraping
+- Don't Need to Login to Instagram/Twitter Account for Scraping
 
 
 # DataScrape-Analyze
